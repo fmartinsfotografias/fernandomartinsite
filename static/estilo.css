@@ -1,0 +1,255 @@
+/* Formatação de inicial */
+
+html{
+    height: 100%;
+}
+
+a {
+    clear: both;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.5s;
+
+}
+
+a:hover{
+    color: blue;
+    font-size: 20px;
+    transition: 0.5s;
+
+}
+
+
+body{
+    /*background: url(../_imagens/cidade2.jpg) fixed center;*/
+    background: radial-gradient(rgb(94, 94, 94), rgb(0, 0, 0)) fixed;
+    text-align: center;
+    font-family: 'Fredoka', sans-serif;
+    color: white;
+    text-decoration: white;
+    
+}
+.titulo{
+    text-align: left;
+    color: white;
+    margin-left: 330px;
+}
+.caixa{
+    box-sizing: 940px;
+    min-width: 500px;
+    
+}
+img {
+    border-radius: 50%;
+    width: 65%;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.37);
+    transition: 0.5s;
+
+    
+}
+img:hover{
+    width: 70%;
+    transition: 0.5s;
+}
+.foto-perfil{
+    text-align: center;
+
+}
+
+.dados-pessoais{
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );   
+    font-size: 16px;
+    vertical-align: top;
+    padding: 20px 20px;
+    padding-bottom: 0px;
+    margin: 10px;
+    width: 15%;
+    height: 1050px;
+    border-radius: 5px;
+    box-shadow: 15px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.377);
+    text-decoration: none;
+    text-align: left;
+
+}
+
+.dados-pessoaish2{
+    border-bottom: 1px solid rgba(255, 99, 71, 0.4);
+    border-left: 1px solid rgba(255, 99, 71, 0.4);
+    padding-left: 10px;
+    padding-bottom: 10px;
+    transition: 0.5s;
+
+}
+
+.curriculum {
+    border-bottom: 1px solid rgba(255, 99, 71, 0.4);
+    border-left: 1px solid rgba(255, 99, 71, 0.4);
+    padding-left: 10px;
+    padding-bottom: 10px;
+
+}
+
+.dados-pessoais h1:hover{
+    color: rgba(255, 97, 97, 0.651);
+    transition: 0.5s;
+
+}
+
+.dados-pessoaish2:hover{
+    color: rgba(255, 97, 97, 0.651);
+    transition: 0.5s;
+}
+
+
+.dados{
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: normal;
+    transition: 0.5s;
+
+}
+
+.dados:hover{
+    transition: 0.75s;
+    font-size: 16px;
+}
+
+
+.competencias{
+    border-bottom: 1px solid rgba(255, 99, 71, 0.4);
+    border-left: 1px solid rgba(255, 99, 71, 0.4);
+    padding-left: 10px;
+    padding-bottom: 10px;
+    transition: 0.5s;
+
+
+
+}
+.competencias:hover{
+    color: rgba(255, 97, 97, 0.651);
+    transition: 0.5s;
+    
+}
+
+
+.cursos{
+    font-weight: bold;    
+    border-bottom: 1px solid rgba(255, 99, 71, 0.4);
+    padding-left: 10px;
+    padding-bottom: 10px;
+    transition: 0.5s;
+
+
+}
+
+.cursos:hover{
+        color: rgba(255, 97, 97, 0.651);
+        transition: 0.5s;
+    }
+
+.nivel:hover{
+    color: rgba(255, 97, 97, 0.651);
+    transition: 0.5s;
+    font-size: 18px;
+}
+
+.nivel{
+    font-size: 14px;
+    transition: 0.5s;
+
+}
+
+    
+.principal{
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );
+    font-size: 16px;
+    display: inline-block;
+    vertical-align: top;
+    padding:  20px ;
+    margin: 10px;
+    border-radius: 5px;
+    width: 70%;
+    height: 1170px;
+    min-width: 600px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.377);
+    text-align: left;
+    
+}
+
+.principal h2{
+    border-bottom: 1px solid rgba(255, 99, 71, 0.4);
+    border-left: 1px solid rgba(255, 99, 71, 0.4);
+    padding: 10px;
+    transition: 0.75s;
+
+}
+
+.principal h2:hover{
+    color: rgba(255, 97, 97, 0.651);
+    transition: 0.5s;
+    font-size: 28px;
+}
+.lista-linguagem:hover{
+    color: rgba(255, 97, 97, 0.651);
+    transition: 0.5s;
+    font-size: 20px;
+}
+
+.lista-linguagem{
+    border-bottom: 1px solid rgba(255, 99, 71, 0.4);
+    padding: 10px;
+    transition: 0.5s;
+
+
+}
+
+.lista-projetos{
+    margin: 20px;
+    text-decoration: none;
+    color: white;    
+    transition: 0.5s;
+
+}
+.lista-projetos:hover{
+    color: rgba(255, 97, 97, 0.651);
+    transition: 0.75s;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+.rodape{
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );
+    border-radius: 5px;
+    margin-right: 10%;
+    margin-left: 10%;
+    text-align: center;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.377);
+}
+
+
+@media screen and (max-width: 480px){
+
+    body{
+        background-color: rgb(255, 255, 255);
+        box-sizing: auto;
+        text-align: left;
+        padding: 20px;
+    }
+    .dados-pessoais ,.principal
+    {
+        width: auto;
+        margin-bottom: 10px;
+        margin-top: 0px;
+    }
+
+
+}

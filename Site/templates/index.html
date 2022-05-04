@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+    {% include 'partials/menu_lateral.html' %}
+
+
+        <main class="principal">
+            <h2>Perfil</h2>
+            <p>Olá, sou <strong> Fernando Martins</strong>, tenho 35 anos de idade, casado e pai de duas meninas
+                já fiz de tudo um pouco nessa vida, trabalhei na construção civil, onde eu administrei
+                mais de 200 funcionarios, já fui motorista viajando por todo esse brasil,
+                já organizei até festival de Heavy Metal em minha cidade natal, hoje sou fotógrafo de Pessoais
+                e estou estudando a minha mais nova paixão, a linguagem de programação.
+                <br>
+                <br>
+                Gosto de jogar video games( de onde surgiu o interesse por programação), sou violeiro, gosto de cuidar
+                da minha pequena horta e de ver bons filmes na televisão, e claro conhecer novas culturas por
+                esse mundo a fora
+            </p>
+
+            <h2>Experiências Profissionais</h2>
+            <p>Administrativo de Obras de 2005 a 2015
+                <br>
+                Fotógrafo de Casamentos de 2015 até os dias atuais
+            </p>
+            <h2>Projetos</h2>
+            <ul>
+                <li class="lista-linguagem">PYTHON</li>
+                   <dd class="lista-projetos"> <a href="{% url 'whatsapp' %}" target="blank"> Automação de Whatsapp </a></dd>
+                <li class="lista-linguagem">HTML/CSS</li>
+                    <dd class="lista-projetos"> <a href="https://miriamullercerimonial.netlify.app/" target="blank"> Site Miriam Uller </a></dd>
+                    <dd>Esse é o meu primeiro site, ele ainda esta em construção, mas deu para aplicar algumas técnicas de HTML e CSS para a
+                        configuração e usabilidade dele.
+                    </dd>
+                    <dd class="lista-projetos"> <a href="https://login-tela.netlify.app/" target="blank">
+                    Tela de Login </a></dd>
+                    <dd>Essa é uma tela de Login com animação, ideal para portais, CRMs, e etc, uma forma de estilizar sua página de Login</dd>
+                     <dd class="lista-projetos"> <a href="https://infosfm.netlify.app" target="blank"> Tela de conversão de Valores </a></dd>
+                <li class="lista-linguagem">JavaScript</li>
+                    <dd class="lista-projetos"> Projeto 4 </dd>
+                    <dd class="lista-projetos"> Projeto 5 </dd>
+            </ul>
+        </main>
+
+    </div>
+    {% include 'partials/footer.html' %}
+
+    {% endblock %}
+
+
+</html>
+

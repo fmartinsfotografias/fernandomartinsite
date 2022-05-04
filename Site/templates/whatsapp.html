@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+{% include 'partials/menu_lateral.html' %}
+
+
+<main>
+    <div class="principal">
+        <header class="titulo-video">
+            <h2>Automação de Whatsapp com Python</h2>
+        </header>
+        <p>Esse codigo tem como conceito fazer a automação no envio de mensagens via Whatsap <br>
+            esse codigo esta focado no tratamento das mensagens e do envio, logo ele terá uma interface <br>
+            que irá receber nome, contato e mensagem para ser enviada. </p>
+
+        <pre>
+            <code> 
+                    import selenium
+                    from selenium.webdriver.common.keys import Keys
+                    from selenium.webdriver.common.by import By
+                    from selenium import webdriver
+                    import time
+                    import urllib
+                    import pandas as pd
+
+
+                    #Fonte do Relatorio
+                    data = pd.read_excel("relatorios.xlsx")
+
+                    #Navegação
+                    navegador = webdriver.Chrome()
+                    navegador.get("https://web.whatsapp.com/")
+
+                    while len(navegador.find_elements(By.ID,"side")) < 1:
+                        time.sleep(1)
+
+                    # já estamos com o login feito no whatsapp web
+                    for i, mensagem in enumerate(data['MENSAGEM']):
+                        nome = data.loc[i, "NOME"]
+                        numero = data.loc[i, "TELEFONE"]
+                        texto = urllib.parse.quote(f"Oi {nome}! {mensagem}")
+                        link = f"https://web.whatsapp.com/send?phone={numero}&text={texto}"
+                        navegador.get(link)
+                        while len(navegador.find_elements(By.ID, "side")) < 1:
+                            time.sleep(7)
+                        navegador.find_element(By.XPATH, '//*[@id="main"]/footer/div[1]/div/span
+                        <br>[2]/div/div[2]/div[1]/div/div[2]').send_keys(Keys.ENTER)
+                        time.sleep(10)
+                    navegador.close()
+
+                </code>
+                </pre>
+    </div>
+    <div class="principal">
+        <h2 class="titulo-video">Apresentação do Projeto em Python</h2>
+        <iframe class="play-video" width="720" height="480" src="https://www.youtube.com/embed/UOAhax-Hwoc?controls=0"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
+</main>
+{% include 'partials/footer.html' %}
+{% endblock %}
+
+
+</html>
